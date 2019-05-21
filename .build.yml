@@ -1,0 +1,10 @@
+image: alpine/edge
+packages:
+  - openjdk8
+  - maven
+sources:
+  - https://github.com/kerie/maven-demo.git
+tasks:
+  - test: |
+      cd maven-demo
+      mvn clean test
